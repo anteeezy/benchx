@@ -1,1 +1,31 @@
-/target
+# === Rust / Cargo ===
+
+# Ignore target directory (cargo builds, binaries, artifacts)
+target/
+
+# Cargo.lock is typically committed for binaries, NOT libraries.
+# Since BenchX is a binary tool, you SHOULD commit Cargo.lock.
+# So we do NOT ignore Cargo.lock.
+
+
+# === IDEs / Editors ===
+
+# VS Code settings
+.vscode/
+
+# IntelliJ / RustRover
+.idea/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+
+# === OS-generated files ===
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.i
