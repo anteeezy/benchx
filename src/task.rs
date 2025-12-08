@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 use std::time::Instant;
 use std::process::Command; 
 
@@ -17,7 +18,7 @@ pub fn run_once(command: &str) -> TaskResult {
         let duration_ms = duration.as_secs_f64() * 1000.0;
         return TaskResult {
             success: false,
-            duration_ms: duration_ms,
+            duration_ms,
         };
     }
 
@@ -35,7 +36,7 @@ pub fn run_once(command: &str) -> TaskResult {
     let duration_ms = duration.as_secs_f64() * 1000.0;
 
     TaskResult {
-        success: success,
-        duration_ms: duration_ms,
+        success,
+        duration_ms,
     }
 }
