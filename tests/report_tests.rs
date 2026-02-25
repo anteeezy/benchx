@@ -38,13 +38,13 @@ fn summary_contains_core_fields() {
     assert!(output.contains("Failures:     1"));
 
     // Latency numbers (formatted with 3 decimals)
-    assert!(output.contains("Min:        10.000"));
-    assert!(output.contains("Avg:        30.000"));
-    assert!(output.contains("Max:        50.000"));
+    assert!(output.contains("min:        10.000"));
+    assert!(output.contains("avg:        30.000"));
+    assert!(output.contains("max:        50.000"));
 
     // P-Value
-    assert!(output.contains("P50:        31.000"));
-    assert!(output.contains("P90:        40.000"));
-    assert!(output.contains("P95:        45.000"));
-    assert!(output.contains("P99:        50.000"));
+    assert!(output.contains("p50:        31.000"));
+    assert!(output.contains("p90:        40.000"));
+    assert!(output.contains("p95:        45.000"));
+    assert!(output.contains("p99:        50.000"));
 }
