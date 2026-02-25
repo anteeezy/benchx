@@ -43,4 +43,8 @@ fn summary_contains_core_fields() {
     assert!(output.contains("Max:        50.000"));
 
     // P-Value
+    assert!(output.contains("P50:        31.000"));
+    assert!(output.contains("P90:        40.000"));
+    assert!(output.contains("P95:        45.000"));
+    assert!(output.contains("P99:        50.000"));
 }
