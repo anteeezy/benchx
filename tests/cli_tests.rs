@@ -1,10 +1,10 @@
-use benchx::cli::Config;
+use benchfx::cli::Config;
 use clap::Parser;
 
 #[test]
 fn parses_required_flags() {
     let args = [
-        "benchx",
+        "benchfx",
         "--command", "echo hi",
         "--iterations", "5",
     ];
@@ -20,7 +20,7 @@ fn parses_required_flags() {
 #[test]
 fn parses_all_flags_with_custom_values() {
     let args = [
-        "benchx",
+        "benchfx",
         "--command", "curl https://api.github.com",
         "--iterations", "10",
         "--concurrency", "4",
@@ -38,7 +38,7 @@ fn parses_all_flags_with_custom_values() {
 #[test]
 fn missing_iterations_errors() {
     let args = [
-        "benchx",
+        "benchfx",
         "--command", "echo hi",
     ];
 
@@ -49,7 +49,7 @@ fn missing_iterations_errors() {
 #[test]
 fn missing_command_errors() {
     let args = [
-        "benchx",
+        "benchfx",
         "--iterations", "5",
     ];
 

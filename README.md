@@ -1,21 +1,19 @@
 ```
-___.                        .__    ____  ___
-\_ |__   ____   ____   ____ |  |__ \   \/  /
- | __ \_/ __ \ /    \_/ ___\|  |  \ \     / 
- | \_\ \  ___/|   |  \  \___|   Y  \/     \ 
- |___  /\___  >___|  /\___  >___|  /___/\  \
-     \/     \/     \/     \/     \/      \_/
-                                     
+   __                __   _____  __
+  / /  ___ ___  ____/ /  / __/ |/_/
+ / _ \/ -_) _ \/ __/ _ \/ _/_>  <  
+/_.__/\__/_//_/\__/_//_/_/ /_/|_|  
+                                                                      
 ```
 
-# BenchX
+# BenchFX
 
-BenchX is a Rust CLI tool for benchmarking arbitrary system commands.
+BenchFX is a Rust CLI tool for benchmarking arbitrary system commands.
 
 It executes a command repeatedly, measures latency distributions
 (min / avg / p50 / p90 / p95 / p99), calculates throughput, and tracks failures.
 
-BenchX is designed for clarity, determinism, and scriptable performance analysis.
+BenchFX is designed for clarity, determinism, and scriptable performance analysis.
 
 ---
 
@@ -35,14 +33,14 @@ BenchX is designed for clarity, determinism, and scriptable performance analysis
 Once published:
 
 ```bash
-cargo install benchx
+cargo install benchfx
 ```
 
 Build locally:
 
 ```bash
-git clone https://github.com/anteeezy/benchx.git
-cd benchx
+git clone https://github.com/anteeezy/benchfx.git
+cd benchfx
 cargo build --release
 ```
 
@@ -63,7 +61,7 @@ cargo run -- --command "echo hi" --iterations 3
 JSON output:
 
 ```bash
-benchx --command "echo hi" --iterations 1000 --output json
+benchfx --command "echo hi" --iterations 1000 --output json
 ```
 
 ---
@@ -72,7 +70,7 @@ benchx --command "echo hi" --iterations 1000 --output json
 
 ```
 ========================
-       BenchX
+       BenchFX
 ========================
 
 Command:      echo hi

@@ -1,4 +1,4 @@
-use benchx::task::run_once;
+use benchfx::task::run_once;
 
 #[test]
 fn valid_command_succeeds() {

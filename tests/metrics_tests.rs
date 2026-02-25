@@ -1,5 +1,5 @@
-use benchx::metrics::compute_metrics;
-use benchx::task::TaskResult;
+use benchfx::metrics::compute_metrics;
+use benchfx::task::TaskResult;
 
 #[test]
 fn metrics_all_success() {

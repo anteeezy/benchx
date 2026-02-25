@@ -1,6 +1,6 @@
-use benchx::cli::{Config, OutputFormat};
-use benchx::metrics::Metrics;
-use benchx::report::{format_summary, format_json};
+use benchfx::cli::{Config, OutputFormat};
+use benchfx::metrics::Metrics;
+use benchfx::report::{format_summary, format_json};
 
 #[test]
 fn summary_contains_core_fields() {
@@ -28,7 +28,7 @@ fn summary_contains_core_fields() {
     let output = format_summary(&config, &metrics);
 
     // Header (allow either style as you iterate)
-    assert!(output.contains("BenchX"));
+    assert!(output.contains("BenchFX"));
 
     // Core config fields
     assert!(output.contains("Command:"));

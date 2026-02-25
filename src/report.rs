@@ -8,7 +8,7 @@ pub fn format_summary(config: &Config, metrics: &Metrics) -> String {
     format!(
         "\
 ========================
-      BenchX Summary     
+      BenchFX Summary     
 ========================
 
 Command:      {command}

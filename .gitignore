@@ -4,7 +4,7 @@
 target/
 
 # Cargo.lock is typically committed for binaries, NOT libraries.
-# Since BenchX is a binary tool, you SHOULD commit Cargo.lock.
+# Since BenchFX is a binary tool, you SHOULD commit Cargo.lock.
 # So we do NOT ignore Cargo.lock.
 
 
