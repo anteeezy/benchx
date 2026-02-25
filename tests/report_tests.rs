@@ -18,6 +18,10 @@ fn summary_contains_core_fields() {
         max_latency_ms: 50.0,
         avg_latency_ms: 30.0,
         throughput: 20.0,
+        p50_latency_ms: 31.0,
+        p90_latency_ms: 40.0,
+        p95_latency_ms: 45.0,
+        p99_latency_ms: 50.0,
     };
 
     let output = format_summary(&config, &metrics);
@@ -37,4 +41,6 @@ fn summary_contains_core_fields() {
     assert!(output.contains("Min:        10.000"));
     assert!(output.contains("Avg:        30.000"));
     assert!(output.contains("Max:        50.000"));
+
+    // P-Value
 }
