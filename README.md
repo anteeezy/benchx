@@ -157,7 +157,3 @@ Latency (ms):
 - [ ] Duration-based execution mode
 
 ---
-
-## License
-
-MIT (recommended) or your license of choice.
