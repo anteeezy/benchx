@@ -1,8 +1,13 @@
 [package]
 name = "benchfx"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 license = "MIT"
+description = "CLI tool for benchmarking arbitrary system commands with latency percentiles and concurrency support"
+repository = "https://github.com/anteeezy/benchfx"
+readme = "README.md"
+keywords = ["benchmark", "cli", "performance", "latency"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }
